@@ -2,7 +2,6 @@ package config
 
 import (
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"os"
 	"path"
@@ -26,20 +25,13 @@ func getMachineID() (string, error) {
 }
 
 func validLicense(machineID string) *License {
-
-	/*	defer func() {
-		glog.Info("Invalid License file. Please contact Miraway for support")
-		os.Exit(0)
-	}()*/
-
-	if !checkFileExist("license.dat") {
+	if !checkFileExist("license.key") {
 		glog.Info("License file not found. Please contact Miraway for support")
 		//os.Exit(0)
 	}
 
-	// Read License file
 	pwd, _ := os.Getwd()
-	filepath := path.Join(pwd, "license.dat")
+	filepath := path.Join(pwd, "license.key")
 	glog.Info("File Path", filepath)
 
 	buff1, err := ioutil.ReadFile(filepath)
@@ -96,7 +88,6 @@ func validLicense(machineID string) *License {
 			glog.Info("Invalid license")
 			return nil
 		}
-		fmt.Println(temp)
 		return temp
 	}
 	return nil

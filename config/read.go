@@ -30,10 +30,11 @@ func (ls *License) Println() {
 	fmt.Println("===== THONG TIN LICENSE ======")
 	fmt.Println("== Machine      : ", ls.DeviceID)
 	fmt.Println("== Type         : ", ls.Type)
-	fmt.Println("== Organization : ", ls.Organization)
+	fmt.Println("== Store        : ", ls.Store)
 	fmt.Println("== Start        : ", ls.Start)
 	fmt.Println("== End          : ", ls.End)
 	fmt.Println("== Counter Limit: ", ls.CounterLimit)
 	fmt.Println("== Screen Limit : ", ls.ScreenLimit)
 	fmt.Println("== Kiosk Limit  : ", ls.KioskLimit)
+	fmt.Println("== Mac          : ", ls.Mac)
 }
