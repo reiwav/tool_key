@@ -4,7 +4,8 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"tool_key/config"
+
+	"github.com/reiwav/tool_key/config"
 
 	"github.com/golang/glog"
 )

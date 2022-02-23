@@ -1,4 +1,4 @@
-module tool_key
+module github.com/reiwav/tool_key
 
 go 1.17
 
