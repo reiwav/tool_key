@@ -12,7 +12,7 @@ import (
 )
 
 func Decode() *License {
-	var machineID, err = getMachineID()
+	var machineID, err = GetMachineID()
 	if err != nil {
 		glog.Errorf("get Machine", err)
 		return nil
@@ -20,7 +20,7 @@ func Decode() *License {
 	return validLicense(machineID)
 }
 
-func getMachineID() (string, error) {
+func GetMachineID() (string, error) {
 	return machineid.ID()
 }
 

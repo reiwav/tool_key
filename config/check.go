@@ -24,7 +24,7 @@ func writeLicenseFile(licenseStr string) {
 }
 
 func (doc *License) GenerateLicense() error {
-	var mac, _ = getMachineID()
+	var mac, _ = GetMachineID()
 	doc.Mac = mac
 	// Unmarshal the private key:
 	privateKey, err := lk.PrivateKeyFromB64String(privateKeyStr)
