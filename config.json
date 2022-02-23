@@ -5,6 +5,5 @@
     "end":123456789,
     "limit_counter":10,
     "limit_screen":10,
-    "limit_kiosk":10,
-    "mac":"00:50:56:c0:00:08"
+    "limit_kiosk":10
 }
