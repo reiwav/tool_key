@@ -1,4 +1,4 @@
-module reiwav/tool_key
+module tool_key
 
 go 1.17
 
